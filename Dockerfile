@@ -9,4 +9,4 @@ FROM eclipse-temurin:25-jre-jammy
 WORKDIR /app
 COPY --from=builder /app/target/*.jar app.jar
 EXPOSE 80
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java","-XX:+UseSerialGC","-Xms128m","-Xmx256m","-jar","app.jar"]
