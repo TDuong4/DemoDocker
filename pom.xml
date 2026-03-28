@@ -50,7 +50,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-git status
+
 	<build>
 		<plugins>
 			<plugin>
